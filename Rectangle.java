@@ -1,7 +1,7 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
-/**
+/*
  * A rectangle-shaped Shape
  * Defined by an upper-left corner (x1,y1) and a lower-right corner (x2,y2)
  * with x1<=x2 and y1<=y2
@@ -12,7 +12,6 @@ import java.awt.Graphics;
  * @author Bansharee Ireen; Dartmouth CS 10, Winter 2021; added code to scaffold
  */
 public class Rectangle implements Shape {
-	// TODO: YOUR CODE HERE
 	private int x1, y1, x2, y2;
 	private Color color;
 
