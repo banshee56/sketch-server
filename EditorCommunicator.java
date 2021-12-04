@@ -9,6 +9,8 @@ import java.util.Arrays;
  * @author Chris Bailey-Kellogg, Dartmouth CS 10, Fall 2012
  * @author Chris Bailey-Kellogg; overall structure substantially revised Winter 2014
  * @author Travis Peters, Dartmouth CS 10, Winter 2015; remove EditorCommunicatorStandalone (use echo server for testing)
+ * 
+ * @author Bansharee Ireen; Dartmouth CS 10, Winter 2021; added code to scaffold
  */
 public class EditorCommunicator extends Thread {
 	private PrintWriter out;		// to server
