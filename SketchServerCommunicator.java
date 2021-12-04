@@ -6,6 +6,8 @@ import java.net.Socket;
  * Handles communication between the server and one client, for SketchServer
  *
  * @author Chris Bailey-Kellogg, Dartmouth CS 10, Fall 2012; revised Winter 2014 to separate SketchServerCommunicator
+ * 
+ * @author Bansharee Ireen; Dartmouth CS 10, Winter 2021; added code to scaffold
  */
 public class SketchServerCommunicator extends Thread {
 	private Socket sock;					// to talk with client
@@ -40,7 +42,6 @@ public class SketchServerCommunicator extends Thread {
 			out = new PrintWriter(sock.getOutputStream(), true);
 
 			// Tell the client the current state of the world
-			// TODO: YOUR CODE HERE
 			// tells the new client to draw each of the shapes present in the current server
 			for (int id0: server.getSketch().id2Shape.navigableKeySet()) {
 				Shape shape = server.getSketch().id2Shape.get(id0);
@@ -48,7 +49,6 @@ public class SketchServerCommunicator extends Thread {
 			}
 
 			// Keep getting and handling messages from the client
-			// TODO: YOUR CODE HERE
 			String line;
 			while ((line = in.readLine()) != null) {
 				String[] editLine = line.split(" ");
