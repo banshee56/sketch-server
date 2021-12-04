@@ -13,6 +13,8 @@ import javax.swing.*;
  * @author CBK, winter 2014, overall structure substantially revised
  * @author Travis Peters, Dartmouth CS 10, Winter 2015; remove EditorCommunicatorStandalone (use echo server for testing)
  * @author CBK, spring 2016 and Fall 2016, restructured Shape and some of the GUI
+ * 
+ * @author Bansharee Ireen; Dartmouth CS 10, Winter 2021; added code to scaffold
  */
 
 public class Editor extends JFrame {	
@@ -169,7 +171,6 @@ public class Editor extends JFrame {
 	 * along with the object currently being drawn in this editor (not yet part of the sketch)
 	 */
 	public void drawSketch(Graphics g) {
-		// TODO: YOUR CODE HERE
 		if (!sketch.id2Shape.isEmpty()) {
 			TreeMap<Integer, Shape> shapeMap = sketch.id2Shape;	// grab the map of shapes
 
@@ -196,7 +197,6 @@ public class Editor extends JFrame {
 	 * in deleting mode, (request to) delete clicked shape
 	 */
 	private void handlePress(Point p) {
-		// TODO: YOUR CODE HERE
 		if (mode == Mode.DRAW) {
 			drawFrom = p;	// set drawFrom as the starting point of the shapes
 			// creating "empty" shapes from drawFrom
@@ -275,7 +275,6 @@ public class Editor extends JFrame {
 	 * in moving mode, release it		
 	 */
 	private void handleRelease() {
-		// TODO: YOUR CODE HERE
 		if (mode == Mode.DRAW) {
 			comm.updateShape(curr, -1, "draw");
 		}
