@@ -8,6 +8,8 @@ import java.awt.Graphics;
  * 
  * @author Chris Bailey-Kellogg, Dartmouth CS 10, Fall 2012
  * @author CBK, Fall 2016, constructors and corner setter
+ * 
+ * @author Bansharee Ireen; Dartmouth CS 10, Winter 2021; added code to scaffold
  */
 public class Ellipse implements Shape {
 	private int x1, y1, x2, y2;		// upper left and lower right
