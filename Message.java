@@ -1,9 +1,6 @@
-/*
- * A class to handle the messages sent between client and server.
+/* A class to handle the messages sent between client and server.
  *
- * 
  * @author Bansharee Ireen; Dartmouth CS 10, Winter 2021; added code to scaffold
- *
  */
 
 import java.awt.*;
