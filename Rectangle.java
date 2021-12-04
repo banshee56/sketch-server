@@ -8,6 +8,8 @@ import java.awt.Graphics;
  * 
  * @author Chris Bailey-Kellogg, Dartmouth CS 10, Fall 2012
  * @author CBK, updated Fall 2016
+ * 
+ * @author Bansharee Ireen; Dartmouth CS 10, Winter 2021; added code to scaffold
  */
 public class Rectangle implements Shape {
 	// TODO: YOUR CODE HERE
